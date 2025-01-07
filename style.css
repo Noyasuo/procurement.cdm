@@ -57,17 +57,17 @@ body {
     }
 
     .download-section {
-        text-align: left; /* Align text to the left on smaller screens */
+        text-align: center; /* Center text on smaller screens */
     }
 
     .download-image {
-        margin-left: 0; /* Move the download image to the left on smaller screens */
-        width: 100%; /* Ensure the image takes full width on smaller screens */
+        width: 50%; /* Reduce the size of the download image on smaller screens */
+        margin: 0 auto; /* Center the download image on smaller screens */
     }
 
     .download-image-container {
         display: flex;
-        justify-content: flex-start; /* Align the image to the left */
+        justify-content: center; /* Center the image container */
         width: 100%; /* Ensure the container takes full width */
     }
 
