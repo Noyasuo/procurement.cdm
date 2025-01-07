@@ -35,7 +35,7 @@ body {
 
 @media (max-width: 768px) {
     .section {
-        padding: 40px 10px;
+        padding: 20px 10px; /* Reduce padding on smaller screens */
         flex-direction: column; /* Stack elements vertically on smaller screens */
     }
 
@@ -58,12 +58,34 @@ body {
 
     .download-image {
         margin-left: 0; /* Move the download image to the left on smaller screens */
-        width: auto; /* Ensure the image takes full width on smaller screens */
+        width: 100%; /* Ensure the image takes full width on smaller screens */
     }
 
     .download-image-container {
         display: flex;
         justify-content: flex-start; /* Align the image to the left */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce font size for h1 on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Reduce font size for h2 on smaller screens */
+    }
+
+    h3 {
+        font-size: 1rem; /* Reduce font size for h3 on smaller screens */
+    }
+
+    p {
+        font-size: 0.875rem; /* Reduce font size for p on smaller screens */
+    }
+
+    .btn-lg {
+        font-size: 1rem; /* Reduce font size for large buttons on smaller screens */
+        padding: 10px 20px; /* Adjust padding for large buttons on smaller screens */
     }
 }
 
