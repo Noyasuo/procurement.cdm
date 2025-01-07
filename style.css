@@ -8,7 +8,6 @@ body {
 
 .navbar {
     margin-bottom: 20px;
-    background-color: green !important; /* Set the navbar background color to green */
 }
 
 .navbar-brand, .navbar-nav .nav-link {
@@ -37,6 +36,34 @@ body {
 @media (max-width: 768px) {
     .section {
         padding: 40px 10px;
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .home-image {
+        width: 100%; /* Ensure the home image takes full width on smaller screens */
+        margin-left: 0; /* Reset margin on smaller screens */
+    }
+
+    .team-image {
+        height: auto; /* Allow team images to adjust height on smaller screens */
+    }
+
+    .help-rectangle {
+        margin: 10px 0; /* Add vertical margin between help rectangles on smaller screens */
+    }
+
+    .download-section {
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+
+    .download-image {
+        margin-left: 0; /* Move the download image to the left on smaller screens */
+        width: auto; /* Ensure the image takes full width on smaller screens */
+    }
+
+    .download-image-container {
+        display: flex;
+        justify-content: flex-start; /* Align the image to the left */
     }
 }
 
@@ -62,11 +89,11 @@ body {
 .download-image {
     max-width: 200%;
     height: auto;
-    width: 200%; /* Increase the width to make the image larger */
+    width: 150%; /* Increase the width to make the image larger */
 }
 
 p {
-    font-size: 1.3rem; /* Increase the font size of <p> elements */
+    font-size: 1rem; /* Increase the font size of <p> elements */
 }
 
 .team-image {
@@ -92,7 +119,19 @@ p {
 }
 
 .help-rectangle img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%; /* Reduce the maximum width of the images */
+    max-height: 80%; /* Reduce the maximum height of the images */
     object-fit: contain; /* Ensure the image fits within the rectangle without distortion */
+}
+
+.row-gap-closer {
+    row-gap: 10px; /* Reduce the gap between rows */
+}
+
+.white-space-nowrap {
+    white-space: nowrap; /* Prevent text from breaking into a new line */
+}
+
+.move-left {
+    margin-left: -20px; /* Move the button further to the left */
 }

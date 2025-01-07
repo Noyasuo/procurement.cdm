@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="assets/logo.png" alt="Logo">
+            <img src="assets/logo.png" alt="Logo" class="d-inline-block align-top" style="max-height: 40px;">
             Colegio de Montalban
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,68 +38,63 @@
     </nav>
 
     <div class="container mt-3">
-        <section id="home" class="section d-flex align-items-center" style="min-height: 100vh;">
+        <section id="home" class="d-flex align-items-center" style="min-height: 100vh;">
             <div class="row w-100">
                 <div class="col-md-6 d-flex align-items-center">
                     <img src="assets/home.png" class="img-fluid home-image" alt="Home Image">
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-center">
                     <h1 class="mb-3">Optimizing Procurement, Empowering Progress.</h1>
-                    <p>Procurement Management System streamlines the entire purchasing process to improve efficiency, transparency, and control over procurement activities. From requisition to payment, our system offers a centralized platform that enables seamless management of vendor relationships, procurement planning, and order tracking. By integrating real-time data and comprehensive reporting tools, users can make informed decisions, reduce costs, and ensure compliance with organizational standards. Whether you're managing inventory, tracking orders, or overseeing supplier performance, our system provides the tools you need to optimize procurement operations, enhance collaboration, and drive sustainable value for your organization.</p>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section mt-5">
-            <div class="text-center">
-                <h2>About Our System</h2>
-                <p>Our Procurement Management System simplifies the request process, offering a streamlined solution for managing procurement needs. Designed to handle requests efficiently, the system provides real-time tracking, user-friendly interfaces, and comprehensive reporting. It empowers organizations to enhance their request management, ensuring transparency and improving overall efficiency. Experience seamless integration with existing systems and take control of your procurement requests with ease.</p>
-            </div>
+        <section id="about" class="mt-5 text-center">
+            <h2>About Our System</h2>
+            <p>Our Procurement Management System simplifies the request process, offering a streamlined solution for managing procurement needs. Designed to handle requests efficiently, the system provides real-time tracking, user-friendly interfaces, and comprehensive reporting. It empowers organizations to enhance their request management, ensuring transparency and improving overall efficiency. Experience seamless integration with existing systems and take control of your procurement requests with ease.</p>
         </section>
 
-        <section id="team" class="section mt-5">
-            <div class="text-center">
-                <h2>Our Team</h2>
-                <p>Meet the dedicated team behind our Procurement Management System.</p>
-                <div class="row row-gap-closer">
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/noya.png" class="img-fluid team-image" alt="Noya">
-                        <p class="mt-2">Noya</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/banoy.png" class="img-fluid team-image" alt="Banoy">
-                        <p class="mt-2">Banoy</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/balagon.png" class="img-fluid team-image" alt="Balagon">
-                        <p class="mt-2">Balagon</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/dizon.png" class="img-fluid team-image" alt="Dizon">
-                        <p class="mt-2">Dizon</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/binamira.png" class="img-fluid team-image" alt="Binamira">
-                        <p class="mt-2">Binamira</p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="assets/semeniano.png" class="img-fluid team-image" alt="Semeniano">
-                        <p class="mt-2">Semeniano</p>
-                    </div>
+        <section id="team" class="mt-5 text-center">
+            <h2>Our Team</h2>
+            <p>Meet the dedicated team behind our Procurement Management System.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="assets/noya.png" class="img-fluid team-image" alt="Noya">
+                    <p class="mt-2">Noya</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/banoy.png" class="img-fluid team-image" alt="Banoy">
+                    <p class="mt-2">Banoy</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/balagon.png" class="img-fluid team-image" alt="Balagon">
+                    <p class="mt-2">Balagon</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/dizon.png" class="img-fluid team-image" alt="Dizon">
+                    <p class="mt-2">Dizon</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/binamira.png" class="img-fluid team-image" alt="Binamira">
+                    <p class="mt-2">Binamira</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="assets/semeniano.png" class="img-fluid team-image" alt="Semeniano">
+                    <p class="mt-2">Semeniano</p>
                 </div>
             </div>
         </section>
 
-        <section id="help" class="section mt-5">
-            <div class="row w-100">
+        <section id="help" class="mt-5">
+            <div class="row">
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <div class="help-rectangle">
+                    <div class="help-rectangle mt-5">
                         <h3>FAQs</h3>
                         <img src="assets/faq.png" alt="FAQs">
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <div class="help-rectangle">
+                    <div class="help-rectangle mt-5">
                         <h3>User's Guide</h3>
                         <img src="assets/guide.png" alt="User's Guide">
                     </div>
@@ -107,12 +102,13 @@
             </div>
         </section>
 
-        <section id="download" class="section mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary btn-lg">Download</a>
+        <section id="download" class="mt-5 text-center download-section">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4 text-md-right text-center mb-3 mb-md-0">
+                    <h3 class="white-space-nowrap">Download Our Mobile App Now!</h3>
+                    <a href="#" class="btn btn-primary btn-lg mt-3 move-left">Download</a>
                 </div>
-                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="col-md-4 text-center download-image-container">
                     <img src="assets/download.png" class="img-fluid download-image" alt="Download Image">
                 </div>
             </div>
