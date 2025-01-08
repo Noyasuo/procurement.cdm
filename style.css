@@ -46,6 +46,7 @@ body {
     .home-image {
         width: 100%; /* Ensure the home image takes full width on smaller screens */
         margin-left: 0; /* Reset margin on smaller screens */
+        margin-top: 10px; /* Reduce margin-top on smaller screens */
     }
 
     .team-image {
